@@ -1,4 +1,4 @@
-%addpath('C:\Users\Mohab\Desktop');
+addpath('F:\imp. items\biomedical engineering\4th year\1st Semester\Graduation Project\sound libraries\Training B Normal');
 
 %change current directory
 %cd('C:\Users\Mohab\Desktop\Training B Normal');
@@ -26,6 +26,8 @@
 %to convert it to db
 db=20*log10(abs(S));
 fdb=db;
+
+%visualizing and analyzing the spectrogram to get the threshold value
 
 %%to apply the threshold of 18 db
 db(find(db<18))=0;
